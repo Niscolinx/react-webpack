@@ -1,5 +1,5 @@
 import react, {Component} from 'react'
-import {Link, Route} from 'react-router-dom'
+import {Link, Route, Switch} from 'react-router-dom'
 import asyncComponent from './hoc/asyncComponent'
 
 import Pizza from './containers/pizza'
@@ -11,8 +11,10 @@ const asyncUsers = asyncComponent(() => {
 class App extends Component{
 
     render(){
-        <Route path='/' exact component = {Pizza}/>
-        <Route path='/Users' exact component = {asyncUsers}/>
+        <Switch>
+            <Route path='/' exact component = {Pizza}/>
+            <Route path='/Users' exact component = {asyncUsers}/>
+        </Switch>
 
         return(
             <Link to='/'>Pizza</Link>
