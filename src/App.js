@@ -2,11 +2,11 @@ import react, {Component} from 'react'
 import {Link, Route, Switch} from 'react-router-dom'
 import asyncComponent from './hoc/asyncComponent'
 
-import Pizza from './containers/pizza'
+import Pizza from './containers/Pizza'
 
 
 const asyncUsers = asyncComponent(() => {
-    return import('./containers/users')
+    return import('./containers/Users')
 })
 class App extends Component{
 
