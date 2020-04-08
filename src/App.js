@@ -17,8 +17,10 @@ class App extends Component{
         </Switch>
 
         return(
-            <Link to='/'>Pizza</Link>
-            <Link to='/Users'>Users</Link>
+            <div>
+                <Link to='/'>Pizza</Link>
+                <Link to='/Users'>Users</Link>
+            </div>
         )
     }
 }
