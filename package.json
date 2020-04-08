@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Niscolinx/react-webpack/issues"
   },
-  "homepage": "https://github.com/Niscolinx/react-webpack#readme"
+  "homepage": "https://github.com/Niscolinx/react-webpack#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
