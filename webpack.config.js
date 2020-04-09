@@ -1,5 +1,5 @@
 module.exports = {
-    path: '',
-    publicUrl: '',
+    devtool: 'cheap-module-eval-source-map',
+    entry: '',
     file: ''
 }
