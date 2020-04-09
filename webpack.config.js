@@ -7,16 +7,20 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '',
+        filename: 'bundle.js'
 
     },
     resolve:{
         extensions: ['.js', 'jsx']
     },
 
-    module: [
-        {
-            rules: \/.js$\,
-            
-        }
-    ]
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                loader: '',
+                exclude: /node_modules/
+            }
+        ]
+    }
 }
