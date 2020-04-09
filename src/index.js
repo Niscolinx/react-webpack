@@ -5,7 +5,7 @@ import './index.scss'
 
 const app = (
     <BrowserRouter>
-    <App/>
+        <App />
     </BrowserRouter>
 )
 
