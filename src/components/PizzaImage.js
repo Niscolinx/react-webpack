@@ -21,7 +21,6 @@ const pizza = (props) => {
         <img src = {pizzaImage} className = 'pizzaImg_main'/>
         <img src = {pizzaImage} className = 'pizzaImg_main'/>
         <img src = {pizzaImage} className = 'pizzaImg_main'/>
-        <img src = {pizzaImage} className = 'pizzaImg_main'/>
     </div>
 }
 
