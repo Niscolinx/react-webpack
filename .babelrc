@@ -1,5 +1,5 @@
 {
-    "presets" : [
+    "presets": [
         ["env", {
             "targets": {
                 "browsers": [
@@ -10,5 +10,8 @@
             }
         }],
         "react"
+    ],
+    "plugins": [
+        "syntax-dynamic-import"
     ]
 }
