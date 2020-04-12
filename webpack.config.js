@@ -28,6 +28,7 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: {
+                            importLoaders: 1,
                             modules: true,
                             localIdentName: '[name]__[local]__[hash:base64:5]'
                         }
@@ -36,8 +37,11 @@ module.exports = {
                         loader: 'postcss-loader',
                         options: {
                             Ident: 'postcss',
-                            plugins = () => [
-                                
+                            plugins: () => [
+                                "browsers": [
+                                    "> 1%",
+                                    "last 2 versions"
+                                ]
                             ]
                         }
                     }
