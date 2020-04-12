@@ -9,7 +9,7 @@ module.exports = {
         filename: 'bundle.js'
 
     },
-    resolve:{
+    resolve: {
         extensions: ['.js', 'jsx']
     },
 
@@ -22,7 +22,17 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                use: [
+                    { loader: 'style-loader' },
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: true,
+                            localIdentName: '[name]__[local]__[hash:base64:5]'
+                        }
+                    }
+                ]
             }
         ]
     }
