@@ -35,8 +35,10 @@ module.exports = {
                     {
                         loader: 'postcss-loader',
                         options: {
-                            Ident: '',
-                            
+                            Ident: 'postcss',
+                            plugins = () => [
+                                
+                            ]
                         }
                     }
                 ]
