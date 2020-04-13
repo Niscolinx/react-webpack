@@ -22,6 +22,12 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
+
+            {
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                use: 
+            }
             {
                 test: /\.css$/,
                 exclude: /node_modules/,
