@@ -39,30 +39,6 @@ module.exports = {
                 }
             },
 
-            // {
-            //     test: /\.scss$/,
-            //     use: ExtractTextPlugin.extract({
-            //         fallback: 'style-loader',
-            //         use: [
-            //             {
-            //                 loader: 'css-loader',
-            //                 options: {
-            //                     // If you are having trouble with urls not resolving add this setting.
-            //                     // See https://github.com/webpack-contrib/css-loader#url
-            //                     url: false,
-            //                     minimize: true,
-            //                     sourceMap: true
-            //                 }
-            //             },
-            //             {
-            //                 loader: 'sass-loader',
-            //                 options: {
-            //                     sourceMap: true
-            //                 }
-            //             }
-            //         ]
-            //     })
-            // },
             {
                 test: /\.module\.s(a|c)ss$/,
                 loader: [
@@ -111,35 +87,35 @@ module.exports = {
                 ]
             },
 
-            {
-                test: /\.css$/,
-                exclude: /node_modules/,
-                use: [
-                    { loader: 'style-loader' },
-                    {
-                        loader: "css-loader",
-                        options: {
-                            importLoaders: 1,
-                            modules: true,
-                            localIdentName: '[name]__[local]__[hash:base64:5]'
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            Ident: 'postcss',
-                            plugins: () => [
-                                autoprefixer({
-                                    browsers: [
-                                        "> 1%",
-                                        "last 2 versions"
-                                    ]
-                                })
-                            ]
-                        }
-                    }
-                ]
-            },
+            // {
+            //     test: /\.css$/,
+            //     exclude: /node_modules/,
+            //     use: [
+            //         { loader: 'style-loader' },
+            //         {
+            //             loader: "css-loader",
+            //             options: {
+            //                 importLoaders: 1,
+            //                 modules: true,
+            //                 localIdentName: '[name]__[local]__[hash:base64:5]'
+            //             }
+            //         },
+            //         {
+            //             loader: 'postcss-loader',
+            //             options: {
+            //                 Ident: 'postcss',
+            //                 plugins: () => [
+            //                     autoprefixer({
+            //                         browsers: [
+            //                             "> 1%",
+            //                             "last 2 versions"
+            //                         ]
+            //                     })
+            //                 ]
+            //             }
+            //         }
+            //     ]
+            // },
 
             {
                 test: /\.(png|jpe?g|gif)$/,
