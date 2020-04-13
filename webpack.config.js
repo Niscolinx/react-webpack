@@ -78,6 +78,20 @@ module.exports = {
                         options: {
                             sourceMap: isDevelopment
                         }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            Ident: 'postcss',
+                            plugins: () => [
+                                autoprefixer({
+                                    browsers: [
+                                        "> 1%",
+                                        "last 2 versions"
+                                    ]
+                                })
+                            ]
+                        }
                     }
                 ]
             },
