@@ -25,7 +25,7 @@ module.exports = {
                 exclude: /node_modules/,
                 options: {
                     babelrc: false,
-                    presets: ['@babel/preset-env', '@babel/preset-react']
+                    presets: ['@babel/preset-env', '@babel/preset-reac']
                 }
             },
 
