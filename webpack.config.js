@@ -10,10 +10,6 @@ module.exports = {
         filename: 'bundle.js'
 
     },
-    devServer: {
-        inline: false,
-        contentBase: "./dist"
-    },
 
     resolve: {
         extensions: ['.js', 'jsx']
