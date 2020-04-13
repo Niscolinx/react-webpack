@@ -20,6 +20,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: isDevelopment ? '[name].css' : '[name].[hash].css',
             chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
+        }),
+        new htmlPlugin({
+            template: __dirname + '/public/index.html',
+            filename: 'index.html',
+            inject: 'body'
         })
     ],
 
