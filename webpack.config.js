@@ -27,7 +27,6 @@ module.exports = {
 
             {
                 test: /\.scss$/,
-                exclude: /node_modules/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
@@ -46,41 +45,45 @@ module.exports = {
                             options: {
                                 sourceMap: true
                             }
-                        },
-                        {
-                            test: /\.css$/,
-                            exclude: /node_modules/,
-                            use: [
-                                { loader: 'style-loader' },
-                                {
-                                    loader: "css-loader",
-                                    options: {
-                                        importLoaders: 1,
-                                        modules: true,
-                                        localIdentName: '[name]__[local]__[hash:base64:5]'
-                                    }
-                                },
-                                {
-                                    loader: 'postcss-loader',
-                                    options: {
-                                        Ident: 'postcss',
-                                        plugins: () => [
-                                            autoprefixer({
-                                                browsers: [
-                                                    "> 1%",
-                                                    "last 2 versions"
-                                                ]
-                                            })
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-
-                        {
-                            test: /\.(png|jpe?g|gif)$/,
-                            loader: 'url-loader?limit=20000&name=images/[name].[ext]'
                         }
                     ]
-                }
+                })
+            },
+
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: [
+                    { loader: 'style-loader' },
+                    {
+                        loader: "css-loader",
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                            localIdentName: '[name]__[local]__[hash:base64:5]'
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            Ident: 'postcss',
+                            plugins: () => [
+                                autoprefixer({
+                                    browsers: [
+                                        "> 1%",
+                                        "last 2 versions"
+                                    ]
+                                })
+                            ]
+                        }
+                    }
+                ]
+            },
+
+            {
+                test: /\.(png|jpe?g|gif)$/,
+                loader: 'url-loader?limit=20000&name=images/[name].[ext]'
+            }
+        ]
+    }
 }
