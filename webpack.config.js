@@ -1,4 +1,6 @@
-const path = require('path')
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
