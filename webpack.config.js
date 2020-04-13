@@ -1,7 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development'
-//const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 module.exports = {
@@ -17,8 +16,8 @@ module.exports = {
 
     plugins: [
         new MiniCssExtractPlugin({
-            filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-            chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
+            filename: '[name].css',
+            chunkFilename: '[id].css'
         })
     ],
 
