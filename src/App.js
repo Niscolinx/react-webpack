@@ -15,11 +15,11 @@ class App extends Component {
         return (
             <div>
                 <div>
-                    <Link to='/'>Pizza</Link> | <Link to='/Users'>Users</Link>
-                </div>
-                <div>
                         <Route path='/' exact component={Pizza} />
                         <Route path='/Users' component={asyncUsers} />
+                </div>
+                <div>
+                    <Link to='/'>Pizza</Link> | <Link to='/Users'>Users</Link>
                 </div>
             </div>
         )
