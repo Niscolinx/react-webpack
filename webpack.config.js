@@ -93,35 +93,6 @@ module.exports = {
                 ]
             },
 
-            // {
-            //     test: /\.css$/,
-            //     exclude: /node_modules/,
-            //     use: [
-            //         { loader: 'style-loader' },
-            //         {
-            //             loader: "css-loader",
-            //             options: {
-            //                 importLoaders: 1,
-            //                 modules: true,
-            //                 localIdentName: '[name]__[local]__[hash:base64:5]'
-            //             }
-            //         },
-            //         {
-            //             loader: 'postcss-loader',
-            //             options: {
-            //                 Ident: 'postcss',
-            //                 plugins: () => [
-            //                     autoprefixer({
-            //                         browsers: [
-            //                             "> 1%",
-            //                             "last 2 versions"
-            //                         ]
-            //                     })
-            //                 ]
-            //             }
-            //         }
-            //     ]
-            // },
 
             {
                 test: /\.(png|jpe?g|gif)$/,
