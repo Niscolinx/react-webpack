@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-//import PizzaImage from '../components/PizzaImage'
+import PizzaImage from '../components/PizzaImage'
 
 
 class Pizza extends Component {
@@ -7,7 +7,7 @@ class Pizza extends Component {
         return (
             <div>
                 <h1>This is the pizza</h1>
-                {/* <PizzaImage/> */}
+                <PizzaImage/>
             </div>
         )
     }
