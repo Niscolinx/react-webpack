@@ -25,7 +25,10 @@ module.exports = {
             template: __dirname + '/public/index.html',
             filename: 'index.html',
             inject: 'body'
-        })
+        }),
+        ["@babel/plugin-proposal-class-properties"
+        ]
+
     ],
 
 
