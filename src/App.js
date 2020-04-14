@@ -18,11 +18,8 @@ class App extends Component {
                     <Link to='/'>Pizza</Link> | <Link to='/Users'>Users</Link>
                 </div>
                 <div>
-                    <Switch>
                         <Route path='/' exact component={Pizza} />
                         <Route path='/Users' exact component={asyncUsers} />
-                    </Switch>
-
                 </div>
             </div>
         )
