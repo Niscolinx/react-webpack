@@ -18,8 +18,7 @@ class App extends Component{
 
         return(
             <div>
-                <Link to='/'>Pizza</Link>
-                <Link to='/Users'>Users</Link>
+                <Link to='/'>Pizza</Link> | <Link to='/Users'>Users</Link>
             </div>
         )
     }
