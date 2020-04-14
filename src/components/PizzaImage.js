@@ -1,4 +1,4 @@
-
+import React from 'react'
 import pizzaImage from '../../public/assets/pizza.jpg'
 
 const PizzaImg = (props) => {

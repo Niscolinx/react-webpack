@@ -4,7 +4,7 @@ import PizzaImg from '../components/PizzaImage'
 
 class Pizza extends Component {
     render(){
-        return(
+        return (
             <div>
                 <h1>This is the pizza</h1>
                 <PizzaImg/>
