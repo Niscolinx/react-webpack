@@ -1,5 +1,5 @@
 
-import {pizzaImage} from '../../public/assets/pizza.jpg'
+import pizzaImage from '../../public/assets/pizza.jpg'
 
 const pizza = (props) => {
     <div className = 'pizzaImg'>
