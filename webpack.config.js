@@ -26,8 +26,6 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
-    "@babel/plugin-proposal-class-properties"
-
     ],
 
 
