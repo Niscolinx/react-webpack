@@ -11,15 +11,15 @@ const asyncUsers = asyncComponent(() => {
 class App extends Component{
 
     render(){
-        <Switch>
-            <Route path='/' exact component = {Pizza}/>
-            <Route path='/Users' exact component = {asyncUsers}/>
-        </Switch>
 
         return(
             <div>
                 <Link to='/'>Pizza</Link> | <Link to='/Users'>Users</Link>
             </div>
+        <Switch>
+            <Route path='/' exact component = {Pizza}/>
+            <Route path='/Users' exact component = {asyncUsers}/>
+        </Switch>
         )
     }
 }
