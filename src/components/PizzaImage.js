@@ -1,11 +1,11 @@
 import React from 'react'
-import pizzaImage from '../../public/assets/pizza.jpg'
+import pizza from '../../public/assets/pizza.jpg'
 
-const PizzaImg = (props) => {
+const PizzaImage = (props) => {
     <div className = 'pizzaImg'>
-        <img src = {pizzaImage} className = 'pizzaImg_main'/>      
+        <img src = {pizza} className = 'pizzaImg_main'/>      
     </div>
 }
 
 
-export default PizzaImg;
+export default PizzaImage;
