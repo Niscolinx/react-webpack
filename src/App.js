@@ -19,7 +19,7 @@ class App extends Component {
                         <Route path='/Pizza' component={asyncPizza} />
                 </div>
                 <div>
-                    <Link to='/'>Users</Link> | <Link to='/Pizza'>Users</Link>
+                    <Link to='/'>Users</Link> | <Link to='/Pizza'>Pizza</Link>
                 </div>
             </div>
         )
