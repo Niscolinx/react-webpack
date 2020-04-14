@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
 import asyncComponent from './hoc/asyncComponent'
 
-import Pizza from './containers/Pizza'
+import Users from './containers/Users'
 
 
-const asyncUsers = asyncComponent(() => {
-    return import('./containers/Users')
+const asyncPizza = asyncComponent(() => {
+    return import('./containers/Pizza')
 })
 class App extends Component {
 
@@ -15,11 +15,11 @@ class App extends Component {
         return (
             <div>
                 <div>
-                        <Route path='/' exact component={Pizza} />
-                        <Route path='/Users' component={asyncUsers} />
+                        <Route path='/' exact component={Users} />
+                        <Route path='/Pizza' component={asyncPizza} />
                 </div>
                 <div>
-                    <Link to='/'>Pizza</Link> | <Link to='/Users'>Users</Link>
+                    <Link to='/'>Users</Link> | <Link to='/Pizza'>Users</Link>
                 </div>
             </div>
         )
