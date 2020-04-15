@@ -30,7 +30,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             "React": "react",
         }),
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimization.minimize()
     ],
 
 
