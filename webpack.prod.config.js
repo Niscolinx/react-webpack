@@ -21,10 +21,10 @@ module.exports = {
         minimize: true
     },
     performance: {
-        hints: true,
+        hints: false,
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
-    }
+    },
 
     plugins: [
         new MiniCssExtractPlugin({
