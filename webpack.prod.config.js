@@ -16,6 +16,9 @@ module.exports = {
         filename: 'bundle.js'
 
     },
+    optimization: {
+        minimize: true
+    }
 
     plugins: [
         new MiniCssExtractPlugin({
@@ -30,7 +33,6 @@ module.exports = {
         new webpack.ProvidePlugin({
             "React": "react",
         }),
-        new webpack.optimization.minimize()
     ],
 
 
