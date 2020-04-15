@@ -7,7 +7,8 @@ const webpack = require('webpack')
 
 
 module.exports = {
-    devtool: 'cheap-module-source-map',
+    devtool: 'inline-source-map',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -19,6 +20,11 @@ module.exports = {
     optimization: {
         minimize: true
     },
+    performance: {
+        hints: true,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
 
     plugins: [
         new MiniCssExtractPlugin({
